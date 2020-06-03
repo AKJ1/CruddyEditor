@@ -7,16 +7,21 @@ Cruddy Editor lets you make a customizable DB-Style editor with just a few lines
 The inspiration behind this project was having an in-editor browsable item database.
 A few days later i decided to make it into a generic editor that supports any ScriptableObject.
 
+# Downloads
+[Head over to the releases page to get the latest unitypackage.](https://github.com/AKJ1/CruddyEditor/releases)
+
 # Getting Started
 
-For each type you need an editor for, override ```CruddyEditor<T>``` with your desired ScriptableObject-derived type as the type parameter.
+1. Import the UnityPackage into your projecct
+
+2. For each type you need an editor for, override ```CruddyEditor<T>``` with your desired ScriptableObject-derived type as the type parameter.
 ``` 
     public class MyObjectEditor : CruddyEditor<SampleObject>
     {
     }
 ```
 
-Add a ShowWindow function as you would on any Unity Editor 
+3. Add a ShowWindow function as you would on any Unity Editor 
 
 ```
         [MenuItem("Editor/CruddyExample")]
@@ -28,7 +33,7 @@ Add a ShowWindow function as you would on any Unity Editor
         }
 ```
 
-Afterwards, you can assign the Icon, Name, And Description of your items by overriding their corresponding expressions
+4. Afterwards, you can assign the Icon, Name, And Description of your items by overriding their corresponding expressions
 
 ```
         public override Func<SampleObject, Texture2D> IconProvider => itm =>
