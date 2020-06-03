@@ -1,4 +1,7 @@
 # CruddyEditor
+
+![](images/cruddyscreenshot.png)
+
 Generic CRUD Content Editor for Unity ScriptableObjects.
 
 Cruddy Editor is a tool to create custom editors for your Scriptable Objects instead of using the Browser + Inspector. 
