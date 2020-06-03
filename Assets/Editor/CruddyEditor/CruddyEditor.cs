@@ -34,8 +34,8 @@ namespace Editor.CruddyEditor
     /// TODO : Run full import test in a new project. // Done
     /// TODO : Split into smaller files . // Done
     /// TODO : Refactor & Retest. // Done 
-    /// TODO : Make a tutorial document. 
-    /// TODO : Package and Release a unitypackage.
+    /// TODO : Make a tutorial document. // Done
+    /// TODO : Package and Release a unitypackage. // Done
     /// MAYBE TODO : Add Drag & Drop Functionality.
     /// MAYBE FUTURE TODO : Add Import Wizard
     /// MAYBE FUTURE TODO : Add an abstraction layer over this editor to automatically create editors for every ScriptableObject-type asset.

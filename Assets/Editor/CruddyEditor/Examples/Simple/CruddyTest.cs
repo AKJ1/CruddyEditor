@@ -15,7 +15,7 @@ namespace Editor.CruddyEditor.Samples
         public override Expression<Func<SimpleSampleScriptableObject, string>> DescriptionProvider =>
             itm => "Test Description";
 
-        [MenuItem("Editor/CruddyTest")]
+        [MenuItem("Editor/Examples/CruddyExample")]
         public static void ShowWindow()
         {
             var window = GetWindowWithRect(typeof(TestCruddyEditor), new Rect(0, 0, 1280, 720));
