@@ -1,6 +1,5 @@
 # CruddyEditor
 
-![](images/cruddyscreenshot.png)
 
 Generic CRUD Content Editor for Unity ScriptableObjects.
 
@@ -9,6 +8,9 @@ Cruddy Editor lets you make a customizable DB-Style editor with just a few lines
 
 The inspiration behind this project was having an in-editor browsable item database.
 A few days later i decided to make it into a generic editor that supports any ScriptableObject.
+
+# Screnshot
+![](images/cruddyscreenshot.png)
 
 # Downloads
 [Head over to the releases page to get the latest unitypackage.](https://github.com/AKJ1/CruddyEditor/releases)
