@@ -10,7 +10,8 @@ A few days later i decided to make it into a generic editor that supports any Sc
 # Getting Started
 
 For each type you need an editor for, override ```CruddyEditor<T>``` with your desired ScriptableObject-derived type as the type parameter.
-``` public class MyObjectEditor : CruddyEditor<SampleObject>
+``` 
+    public class MyObjectEditor : CruddyEditor<SampleObject>
     {
     }
 ```
