@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="PreviewTemplate" style="height: 56.8px; flex-direction: row; flex-shrink: 0; flex-grow: 100; width: 100%;">
+        <ui:VisualElement name="Icon" class="list-item-icon preview" style="flex-shrink: 0; height: 56.8px; width: 56.8px;" />
+        <ui:VisualElement style="align-items: flex-start; width: 100%;">
+            <ui:VisualElement style="width: 100%; margin-top: 12px; margin-bottom: 12px; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; flex-shrink: 1; align-items: stretch; white-space: normal;">
+                <ui:Label text="Test String that is toTest String that is toTest String that is toTest String that is toTest String that is toTest String that is toTest String that is to" name="Name" class="list-item-label title" style="flex-direction: row; flex-wrap: wrap; flex-grow: initial; flex-shrink: initial; white-space: normal; -unity-text-align: middle-left; width: auto; font-size: 14px; -unity-font-style: bold; flex-basis: 100%; max-width: none;" />
+                <ui:Label text="AssetName" name="Path" class="list-item-label title" style="flex-direction: column; flex-wrap: nowrap; flex-grow: initial; flex-shrink: initial; white-space: normal; -unity-text-align: upper-right; width: auto; font-size: 12px; -unity-font-style: bold; justify-content: flex-end; color: rgba(101, 101, 101, 255); align-items: auto; flex-basis: 100%; max-width: none;" />
+            </ui:VisualElement>
+            <ui:Label text="test description string that is also nowhere near as offensive as what was here before. PG13 Assets, hurray." name="Description" class="list-item-label subtitle" style="flex-direction: row; flex-wrap: wrap; flex-grow: 100; flex-shrink: 0; white-space: normal; -unity-text-align: upper-left; align-items: flex-start; width: 100%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

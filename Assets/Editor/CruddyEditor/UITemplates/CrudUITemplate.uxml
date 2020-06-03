@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="width: 100%; height: 100%; flex-direction: row;">
+        <Style src="CruddyEditor.uss" />
+        <ui:VisualElement name="Container" style="height: 100%; background-color: rgb(56, 56, 56); width: 25%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; align-items: center;">
+            <uie:ToolbarSearchField focusable="True" name="SearchField" class="searchbar" style="height: auto; flex-grow: 0; width: 95%; background-color: rgb(42, 42, 42);" />
+            <ui:ListView focusable="True" name="ListView" class="existing-encounters-list" style="flex-shrink: 0; height: auto; flex-grow: 100; color: rgb(60, 60, 60); -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgb(56, 56, 56);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="EditorContainer" style="width: 75%;">
+            <ui:IMGUIContainer name="InspectorContainer" style="height: 100%; width: 100%;">
+                <ui:VisualElement name="NoEntriesContainer" style="display: none;">
+                    <ui:VisualElement style="height: 100%; flex-shrink: 0; flex-wrap: nowrap; flex-direction: column; overflow: visible; display: flex; visibility: visible; background-image: none; -unity-background-image-tint-color: rgba(0, 0, 0, 0.16); -unity-background-scale-mode: scale-to-fit; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; -unity-slice-top: 0; margin-left: 0; margin-right: 0; -unity-slice-left: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; align-items: center; justify-content: center;">
+                        <ui:VisualElement style="height: 60%; width: 50%; background-image: url(&apos;/Assets/Editor/CruddyEditor/Visuals/cruddy_warn.png&apos;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(0, 0, 0, 0.09); margin-top: 20px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="height: 100%; width: 100%; background-image: none; -unity-background-image-tint-color: rgba(0, 0, 0, 0); white-space: normal; overflow: visible; flex-shrink: 0; margin-bottom: 0; flex-direction: column; position: relative; top: -100%; background-color: rgba(0, 0, 0, 0);">
+                        <ui:Label text="NO ENTRIES FOUND." style="-unity-text-align: upper-center; height: auto; margin-top: 25px; font-size: 32px;" />
+                        <ui:Label text="Create a new one to begin." style="-unity-text-align: upper-center; height: auto; margin-top: 30px; font-size: 24px; color: rgb(130, 130, 130);" />
+                        <ui:VisualElement style="align-items: stretch; justify-content: flex-end; flex-direction: row; margin-top: 325px; height: 45px;">
+                            <ui:TextField picking-mode="Ignore" label="Name" value="NewItem" text="NewItem" name="CreateFirstPath" style="margin-top: 0; height: auto; align-items: stretch; -unity-text-align: middle-center; margin-left: 0; margin-right: 20px; flex-shrink: 1; flex-grow: 100;" />
+                            <ui:Button text="Create New" name="CreateFirstButton" style="height: auto; width: 110px; flex-direction: column; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; margin-right: 53px; border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="NewEntryContainer">
+                    <ui:VisualElement style="height: 100%; flex-shrink: 0; flex-wrap: nowrap; flex-direction: column; overflow: visible; display: flex; visibility: visible; background-image: none; -unity-background-image-tint-color: rgba(0, 0, 0, 0.16); -unity-background-scale-mode: scale-to-fit; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; -unity-slice-top: 0; margin-left: 0; margin-right: 0; -unity-slice-left: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; align-items: center; justify-content: center;">
+                        <ui:VisualElement style="height: 60%; width: 50%; background-image: url(&apos;/Assets/Editor/CruddyEditor/Visuals/cruddy_zvezda.png&apos;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(0, 0, 0, 0.09); margin-top: 20px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="height: 100%; width: 100%; background-image: none; -unity-background-image-tint-color: rgba(0, 0, 0, 0); white-space: normal; overflow: visible; flex-shrink: 0; margin-bottom: 0; flex-direction: column; position: relative; top: -100%; background-color: rgba(0, 0, 0, 0);">
+                        <ui:Label text="CREATE A NEW ENTRY." style="-unity-text-align: upper-center; height: auto; margin-top: 25px; font-size: 32px;" />
+                        <ui:Label text="Enter your desired name." style="-unity-text-align: upper-center; height: auto; margin-top: 30px; font-size: 24px; color: rgb(130, 130, 130);" />
+                        <ui:VisualElement style="align-items: stretch; justify-content: flex-end; flex-direction: row; margin-top: 325px; height: 45px;">
+                            <ui:TextField picking-mode="Ignore" label="Name" value="NewItem" text="NewItem" name="CreateNewPath" password="false" style="margin-top: 0; height: auto; align-items: stretch; -unity-text-align: middle-center; margin-left: 0; margin-right: 20px; flex-shrink: 1; flex-grow: 100; -unity-font-style: bold; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                            <ui:Button text="Create New" name="CreateNewButton" style="height: auto; width: 110px; flex-direction: column; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; margin-right: 53px; border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:IMGUIContainer>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="height: 35px; align-items: flex-end; flex-direction: row; justify-content: flex-end; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <Style src="CruddyEditor.uss" />
+        <uie:ToolbarMenu name="PathDropdownSelect" text="Test Text" style="width: 200px; height: 100%; padding-right: 4px; padding-top: 4px; padding-bottom: 4px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; font-size: 12px; -unity-text-align: middle-center; white-space: nowrap; -unity-font-style: normal; flex-shrink: 0; align-items: center; justify-content: center;" />
+        <ui:TextField picking-mode="Ignore" label="Path" name="PathField" class="pathbar bottom-bar-element" style="-unity-text-align: middle-left; border-left-width: 5px;" />
+        <ui:VisualElement name="AssetPathContainer" style="height: 100%; flex-direction: row; flex-shrink: 0; flex-grow: 45;">
+            <ui:TextField picking-mode="Ignore" max-length="-1" name="AssetPathField" class="pathbar" style="flex-shrink: 0; height: 100%; align-items: stretch; -unity-text-align: middle-left; flex-grow: 30; margin-left: 18px; margin-right: 18px; justify-content: flex-start;" />
+            <ui:Label text=".asset" style="height: 100%; -unity-text-align: middle-left; margin-right: 18px;" />
+        </ui:VisualElement>
+        <ui:Button text="Delete" name="DeleteButton" class="primary-action-button bottom-bar-element" />
+        <ui:Button text="Save" name="SaveButton" class="primary-action-button bottom-bar-element" />
+        <ui:VisualElement name="WarningIcon" style="height: 100%; width: 40px; padding-left: 0; flex-grow: 1; flex-shrink: 0; background-image: url(&apos;/Assets/Editor/CruddyEditor/Visuals/cruddy_warn.png&apos;); -unity-background-scale-mode: scale-to-fit; visibility: visible; display: flex;" />
+    </ui:VisualElement>
+</ui:UXML>

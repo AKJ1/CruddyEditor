@@ -1,0 +1,108 @@
+.primary-action-button {
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    width: 10%;
+    height: 100%;
+    flex-basis: auto;
+    flex-shrink: initial;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    overflow: visible;
+    min-width: 0;
+    min-height: 0;
+    max-width: none;
+    max-height: none;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+#FoeTemplate {
+    height: 56.8px;
+}
+
+.existing-encounters-list {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(113, 113, 113);
+    background-image: none;
+}
+
+.searchbar {
+    width: 92%;
+    -unity-text-align: upper-left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: initial;
+    flex-basis: auto;
+    align-items: center;
+}
+
+.pathbar {
+    width: auto;
+    height: 100%;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 100;
+    white-space: normal;
+    -unity-text-align: middle-left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.pathbar > .unity-label {
+    width: 1%;
+    max-width: 0;
+    margin-left: 0;
+    margin-right: -110px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bottombar {
+}
+
+.bottom-bar-element {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.edit-control {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    flex-shrink: 100;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+}
+
+.list-item-icon {
+    width: 33%;
+    height: 100%;
+}
+
+.list-item-label {
+}
