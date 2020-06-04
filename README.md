@@ -29,11 +29,11 @@ A few days later i decided to make it into a generic editor that supports any Sc
 3. Add a ShowWindow function as you would on any Unity Editor 
 
 ```
-        [MenuItem("Editor/CruddyExample")]
+        [MenuItem("Editor/MyObjectEditor")]
         public static void ShowWindow()
         {
-            var window = GetWindowWithRect(typeof(TestCruddyEditor), new Rect(0, 0, 1280, 720));
-            window.titleContent = new GUIContent("TryStuff Editor");
+            var window = GetWindowWithRect(typeof(MyObjectEditor), new Rect(0, 0, 1280, 720));
+            window.titleContent = new GUIContent("MyObject Editor");
             window.Show();
         }
 ```
